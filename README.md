@@ -15,4 +15,4 @@ ex:
 2. Call InitHCSR04();
 3. Get distance (in mm) using HCSR04GetDistance function. Value lower than zero means no echo received (distance >3m). Measuring takes about 65ms
 
-*If necessary, change defines above, but be careful, US_ECHO_PIN must be tim ch1 and US_TRIG_PIN must be ch3 or ch4. In case of ch4 change TIM_OC3Init into TIM_OC4Init in stm32f10x_HC-SR04.c file
+*If necessary, change defines in stm32f10x_HC-SR04.h file, but be careful: US_ECHO_PIN must be tim ch1 and US_TRIG_PIN must be ch3 or ch4. In case of ch4 change TIM_OC3Init into TIM_OC4Init in stm32f10x_HC-SR04.c file
